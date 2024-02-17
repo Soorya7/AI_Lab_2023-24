@@ -1,4 +1,4 @@
-<img width="960" alt="image" src="https://github.com/Soorya7/AI_Lab_2023-24/assets/105735689/0d21e644-c167-417c-8d20-3c1e08bc4b3c"># Ex.No: 2  Implementation of Depth First Search
+# Ex.No: 2  Implementation of Depth First Search
 ### DATE: 17-02-2024                                                                           
 ### REGISTER NUMBER : 212221040158
 ### AIM: 
