@@ -42,16 +42,6 @@ def bfs(visited, graph, node): #function for BFS
 # Driver Code
 print("Following is the Breadth-First Search")
 bfs(visited, graph, '5')    # function calling
-
-
-
-
-
-
-
-
-
-
 ### Output:
 
 <img width="960" alt="Screenshot 2024-02-17 153634" src="https://github.com/Soorya7/AI_Lab_2023-24/assets/105735689/00ecf038-7dde-49c5-9821-ee139f0ced0c">
