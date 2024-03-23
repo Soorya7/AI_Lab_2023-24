@@ -1,46 +1,43 @@
-# Ex.No: 6   Logic Programming – Factorial of number                                            
-
-### DATE:09.02.2024
+# Ex.No: 7  Logic Programming –  Logic Circuit Design
+### DATE: 19/03/2024                                                                           
 ### REGISTER NUMBER : 212221040158
 ### AIM: 
-To  write  a logic program  to solve Towers of Hanoi problem  using SWI-PROLOG. 
-### Algorithm:
-1. Start the program
-2.  Write a rules for finding solution of Towers of Hanoi in SWI-PROLOG.
-3.  a )	If only one disk  => Move disk from X to Y.
-4.  b)	If Number of disk greater than 0 then
-5.        i)	Move  N-1 disks from X to Z.
-6.        ii)	Move  Nth disk from X to Y
-7.        iii)	Move  N-1 disks from Y to X.
-8. Run the program  to find answer of  query.
+To write a logic program to design a circuit like half adder and half subtractor.
+###  Algorithm:
+1. Start the Program
+2. Design a AND gate logic if both inputs are 1 then output is 1.
+3. Design a OR gate logic if any one of input is 1 then output is 1.
+4. Design a XOR gate logic if both inputs are different then output is 1.
+5. Design a NOT gate logic if input is 0 then output is 1.
+6. Design a half adder and half subtractor using the rules.
+7. Test the logic.
+8. Stop the program.
 
 ### Program:
 ```
-move(1,X,Y,_) :-
-write('Move top disk from '),
-write(X),
-write(' to '),
-write(Y),
-nl.
-move(N,X,Y,Z) :-
-N>1,
-M is N-1,
-move(M,X,Z,Y),
-move(1,X,Y,_),
-move(M,Z,Y,X).
+and(0,0,0).
+and(0,1,0).
+and(1,1,1).
+and(1,0,0).
+xor(0,0,0).
+xor(0,1,1).
+xor(1,0,1).
+xor(1,1,0).
+not(0,1).
+not(1,0).
+halfadder(A,B,S,C):-
+    xor(A,B,S),
+    and(A,B,C).
+halfsubtractor(A,B,Diff,Bo):-
+    xor(A,B,Diff),
+    not(A,X),
+    and(B,X,Bo).
 ```
-
-
 ### Output:
+![image](https://github.com/ManiKandan228/AI_Lab_2023-24/assets/119160414/31bc378d-ec6a-4b52-8d0c-e0566b189284)
 
-![image](https://github.com/kaushik2022/AI_Lab_2023-24/assets/129837020/2cb66de2-61bd-4e95-b409-d198e13a24b2)
-
-
-
-
-### Result:
-Thus the solution of Towers of Hanoi problem was found by logic programming.
+![image](https://github.com/ManiKandan228/AI_Lab_2023-24/assets/119160414/131f693b-618d-42bc-81d9-392d0866b025)
 
 
 ### Result:
-Thus the solution of Towers of Hanoi problem was found by logic programming.
+Thus the truth table of circuit verified sucessfully.
